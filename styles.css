@@ -1,1 +1,101 @@
 /*Maak hier jouw CSS!*/
+
+*{
+    margin:0px;
+    padding:0px;
+}
+
+body{
+    display: grid;
+    box-sizing: border-box;
+
+    grid-template-columns:1fr 1fr 1fr;
+    grid-template-rows: 50px 190px 100px auto 50px;
+    grid-template-areas:
+            " A  C  C "
+            " B  C  C "
+            " B  E  D "
+            " B  E  . "
+            " F  F  F ";
+    gap: 16px;
+}
+
+header {
+    box-sizing: border-box;
+    grid-area:A;
+    background-color: blue;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
+aside{
+    box-sizing: border-box;
+    grid-area: B;
+    background-color: palegreen;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+article.subArticleC{
+    box-sizing: border-box;
+    grid-area: C;
+    background-color: darkorchid;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+article.subArticleD{
+    box-sizing: border-box;
+    grid-area: D;
+    background-color: coral;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+article.subArticleE{
+    box-sizing: border-box;
+    grid-area: E;
+    background-color: aqua;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+footer{
+    box-sizing: border-box;
+    grid-area: F;
+    background-color: aquamarine;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@media (max-width: 600px) {
+
+    header{
+        background-color: aquamarine;
+    }
+
+    body{
+        display: grid;
+        box-sizing: border-box;
+
+        grid-template-columns:1fr;
+        grid-template-rows: 50px auto 50px 50px 50px 50px 50px;
+        grid-template-areas:
+            " A  A  A "
+            " B  B  B"
+            " C  C  C "
+            " D  D  D "
+            " E  E  E "
+            " .  .  . "
+            " F  F  F ";
+        gap: 16px;
+    }
+
+
+
+}
