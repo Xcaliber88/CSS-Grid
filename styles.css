@@ -8,6 +8,7 @@
 body{
     display: grid;
     box-sizing: border-box;
+    background-color: #fcefdd;
 
     grid-template-columns:1fr 1fr 1fr;
     grid-template-rows: 50px 190px 100px auto 50px;
@@ -23,7 +24,7 @@ body{
 header {
     box-sizing: border-box;
     grid-area:A;
-    background-color: blue;
+    background-color: #ac4449;
     display:flex;
     justify-content: center;
     align-items: center;
@@ -32,7 +33,7 @@ header {
 aside{
     box-sizing: border-box;
     grid-area: B;
-    background-color: palegreen;
+    background-color: #ac4449;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -41,7 +42,7 @@ aside{
 article.subArticleC{
     box-sizing: border-box;
     grid-area: C;
-    background-color: darkorchid;
+    background-color: #ac4449;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -49,7 +50,7 @@ article.subArticleC{
 article.subArticleD{
     box-sizing: border-box;
     grid-area: D;
-    background-color: coral;
+    background-color: #ac4449;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -58,7 +59,7 @@ article.subArticleD{
 article.subArticleE{
     box-sizing: border-box;
     grid-area: E;
-    background-color: aqua;
+    background-color: #ac4449;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -67,7 +68,7 @@ article.subArticleE{
 footer{
     box-sizing: border-box;
     grid-area: F;
-    background-color: aquamarine;
+    background-color: #ac4449;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -76,7 +77,7 @@ footer{
 @media (max-width: 600px) {
 
     header{
-        background-color: aquamarine;
+        background-color: #ac4449;
     }
 
     body{
